@@ -1,4 +1,5 @@
 ﻿using Controllers.Map;
+using Entidades;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -14,6 +15,10 @@ namespace Controllers.Context
         {
 
         }
+
+        public DbSet<Consulta> Consultas{ get; set; }
+        public DbSet<Paciente> Pacientes{ get; set; }
+        public DbSet<Dentista> Dentistas{ get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
