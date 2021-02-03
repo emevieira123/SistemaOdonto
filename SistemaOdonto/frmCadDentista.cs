@@ -10,22 +10,21 @@ using System.Windows.Forms;
 
 namespace SistemaOdonto
 {
-    public partial class frmPrincipal : Form
+    public partial class frmCadDentista : Form
     {
-        public frmPrincipal()
+        public frmCadDentista()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void menuDentista_Click(object sender, EventArgs e)
+        private void label4_Click(object sender, EventArgs e)
         {
-            frmCadDentista frm = new frmCadDentista();
-            frm.ShowDialog();
+
         }
     }
 }
